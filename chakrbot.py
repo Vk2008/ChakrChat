@@ -124,8 +124,17 @@ def chakr_chat(user_input):
         
         elif i in updates_str:
             today = str(date.today()) #default dtype class datetime date
-            return 'I can not provide real time data as per my latest update. Stay Safe'
-            
+            file = open('update.txt')
+            news = file.readlines()
+            for i in range(len(news)):
+                if str(news[i][:-1]) == today:
+                    print('Chakr-Chat: ', today, 'Headlines')
+                    a = i
+            n = sent_tokenize(news[a+1])
+            for j in n:
+                print(j)
+            return 'Stay Safe'
+                            
         elif i in bid:
             return 'Thank You for being with Chakr-Chat. Be Safe!'
 
@@ -135,6 +144,8 @@ def main():
         user_input = input('You: ')
 
         response = chakr_chat(user_input)
+        if response == None:
+            response = 'Stay Safe'
         print('Chakr-Chat:', response)
 
 if __name__ == '__main__': #__name__ built-in python variable, when script is executed __name__ is set to __main__ by default
