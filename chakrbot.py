@@ -85,27 +85,27 @@ def chakr_chat(user_input):
             if 'icici' in comp.lower():
                 print('Chakr-Chat: Steps to Claim', 'Report. Once reported, you\'ll be assigned a dedicated Claim Manager.', 'Provide approval to the Claim Assessment', sep = '\n')
                 print('Chakr-Chat: Documents Required','Identity Proof','RC of vehicle','Driving License','Agreement',sep ='\n')
-                return 'In case of document lose, please type RELIEF. For more: 1800 2666'
+                return 'In case of document loss, please type RELIEF. For more: 1800 2666'
             
             elif 'acko' in comp.lower():
                 print('Chakr-Chat: Steps to Claim', 'Raise claim through Acko app', 'Your vehicle will be collected', sep = '\n')
                 print('Chakr-Chat: Documents Required','Identity Proof','RC of vehicle','Driving License','Agreement', 'Original Purchase Invoice',sep ='\n')
-                return 'In case of document lose, please type RELIEF. For more: 1800 266 2256'
+                return 'In case of document loss, please type RELIEF. For more: 1800 266 2256'
     
             elif 'sundaram' in comp.lower():
                 print('Chakr-Chat: Steps to Claim', 'Inform about the claim. You\'ll be contacted by them further', sep = '\n')
                 print('Chakr-Chat: Documents Required','Claim Form','RC of vehicle','Driving License','Agreement',sep ='\n')
-                return 'In case of document lose, please type RELIEF. For more: 18005689999'
+                return 'In case of document loss, please type RELIEF. For more: 18005689999'
             
             elif 'cholamandalam' in comp.lower():
                 print('Chakr-Chat: Steps to Claim', 'Request for Claim Intiation', 'INspection', sep = '\n')
                 print('Chakr-Chat: Documents Required','Identity Proof','RC of vehicle','Driving License','Agreement',sep ='\n')
-                return 'In case of document lose, please type RELIEF. For more: 1800 208 5544'
+                return 'In case of document loss, please type RELIEF. For more: 1800 208 5544'
             
             elif 'hdfc' in comp.lower():
                 print('Chakr-Chat: Steps to Claim', 'Register claim', 'Wait for claim approval', sep = '\n')
                 print('Chakr-Chat: Documents Required','Identity Proof','RC of vehicle','Driving License','Agreement',sep ='\n')
-                return 'In case of document lose, please type RELIEF. For more: 022 6234 6234'
+                return 'In case of document loss, please type RELIEF. For more: 022 6234 6234'
             
             else:
                 return 'The company is not yet associated with Chakr-Chat. I recommend visiting their website.'
